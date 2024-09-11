@@ -1,24 +1,24 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'home_provider.dart';
+part of 'app_router.dart';
 
 // **************************************************************************
 // RiverpodGenerator
 // **************************************************************************
 
-String _$welcomeHash() => r'99edc5d1323eeb0d8f62d3c7ffe6673e16b84cdf';
+String _$appRouterHash() => r'cf5a8501a1e1c84b398a23bdf8ab5020d54c6020';
 
-/// See also [welcome].
-@ProviderFor(welcome)
-final welcomeProvider = AutoDisposeProvider<String>.internal(
-  welcome,
-  name: r'welcomeProvider',
+/// See also [appRouter].
+@ProviderFor(appRouter)
+final appRouterProvider = AutoDisposeProvider<GoRouter>.internal(
+  appRouter,
+  name: r'appRouterProvider',
   debugGetCreateSourceHash:
-      const bool.fromEnvironment('dart.vm.product') ? null : _$welcomeHash,
+      const bool.fromEnvironment('dart.vm.product') ? null : _$appRouterHash,
   dependencies: null,
   allTransitiveDependencies: null,
 );
 
-typedef WelcomeRef = AutoDisposeProviderRef<String>;
+typedef AppRouterRef = AutoDisposeProviderRef<GoRouter>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
