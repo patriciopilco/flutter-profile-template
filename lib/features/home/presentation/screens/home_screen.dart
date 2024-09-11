@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:myapp/common/widgets/widget_bottom_navigation_bar.dart';
 import 'package:myapp/features/home/presentation/providers/home_provider.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -16,6 +17,7 @@ class HomeScreen extends ConsumerWidget {
       body: Center(
         child: Text(welcome),
       ),
+      bottomNavigationBar: WidgetBottomNavigationBar()
     );
   }
 }
