@@ -32,4 +32,8 @@ class Persona {
       'telefono': telefono,
     };
   }
+
+  static none() {
+    return Persona(id: 0, nombres: '', apellidos: '', cedula: '', telefono: '');
+  }
 }
