@@ -1,16 +1,13 @@
 import 'package:go_router/go_router.dart';
 import 'package:myapp/features/home/presentation/providers/botton_nav_index.dart';
 import 'package:myapp/features/home/presentation/screens/home_screen.dart';
-import 'package:myapp/features/personas/presentation/screens/person_screen.dart';
+import 'package:myapp/features/profile/presentation/screens/person_screen.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'app_router.g.dart';
 
-
-
 @riverpod
 GoRouter appRouter(AppRouterRef ref) {
-
   final currentIndex = ref.watch(bottonNavIndexProvider);
 
   return GoRouter(

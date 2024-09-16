@@ -4,17 +4,17 @@ import 'package:myapp/config/router/app_router.dart';
 import 'package:myapp/features/home/presentation/providers/botton_nav_index.dart';
 
 class WidgetBottomNavigationBar extends ConsumerWidget {
+  const WidgetBottomNavigationBar({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final currentIndex = ref.watch(bottonNavIndexProvider);
-    // TODO: implement build
+
     return BottomNavigationBar(
       currentIndex: currentIndex,
       onTap: (index) {
         ref.read(bottonNavIndexProvider.notifier).state = index;
         final goRouter = ref.read(appRouterProvider);
-
-        // Navegar según el índice seleccionado
         switch (index) {
           case 0:
             goRouter.go('/');
