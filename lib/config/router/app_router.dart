@@ -26,9 +26,9 @@ GoRouter appRouter(AppRouterRef ref) {
         case 0:
           return '/';
         case 1:
-          return '/person';
-        default:
           return '/';
+        default:
+          return '/person';
       }
     },
   );

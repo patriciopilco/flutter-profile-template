@@ -4,6 +4,9 @@ class Persona {
   final String apellidos;
   final String cedula;
   final String telefono;
+  final int edad;
+  final bool estado;
+  final String image;
 
   Persona({
     required this.id,
@@ -11,6 +14,9 @@ class Persona {
     required this.apellidos,
     required this.cedula,
     required this.telefono,
+    required this.edad,
+    required this.estado,
+    required this.image,
   });
 
   factory Persona.fromJson(Map<String, dynamic> json) {
@@ -20,6 +26,9 @@ class Persona {
       apellidos: json['apellidos'],
       cedula: json['cedula'],
       telefono: json['telefono'],
+      edad: json['edad'],
+      estado: json['estado'],
+      image: json['image'],
     );
   }
 
@@ -30,10 +39,14 @@ class Persona {
       'apellidos': apellidos,
       'cedula': cedula,
       'telefono': telefono,
+      'edad': edad,
+      'estado': estado,
+      'image': image,
     };
   }
 
   static none() {
-    return Persona(id: 0, nombres: '', apellidos: '', cedula: '', telefono: '');
+    return Persona(
+        id: 0, nombres: '', apellidos: '', cedula: '', telefono: '', edad: 0, estado: false, image: '');
   }
 }
