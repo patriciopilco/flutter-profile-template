@@ -17,7 +17,7 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final appRouter = ref.watch(appRouterProvider);
     return MaterialApp.router(
-      title: 'Termoterapia',
+      title: 'App Template',
       debugShowCheckedModeBanner: false,
       routerConfig: appRouter,
       theme: AppTheme(isDarkmode: false).getTheme(),

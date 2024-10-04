@@ -20,7 +20,7 @@ class PersonScreen extends ConsumerWidget {
       appBar: AppBar(
         centerTitle: false,
         elevation: 0,
-        backgroundColor: const Color(0xFF00BF6D),
+        backgroundColor: Colors.blueAccent,
         foregroundColor: Colors.white,
         title: const Text("Profile"),
         actions: [
@@ -58,7 +58,7 @@ class PersonScreen extends ConsumerWidget {
                 width: 160,
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color(0xFF00BF6D),
+                    backgroundColor: const Color.fromARGB(255, 68, 138, 255),
                     foregroundColor: Colors.white,
                     minimumSize: const Size(double.infinity, 48),
                     shape: const StadiumBorder(),
