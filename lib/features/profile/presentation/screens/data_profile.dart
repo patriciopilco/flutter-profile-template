@@ -28,7 +28,7 @@ class DataProfile extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
           ),
           child: ListTile(
-            leading: const Icon(Icons.phone, color: Colors.green, size: 30),
+            leading: const Icon(Icons.phone, color: Colors.blueAccent, size: 30),
             title:
                 const Text('Teléfono', style: TextStyle(fontWeight: FontWeight.bold)),
             subtitle: Text(persona.telefono),
@@ -41,7 +41,7 @@ class DataProfile extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
           ),
           child: ListTile(
-            leading: const Icon(Icons.circle, color: Colors.green, size: 30),
+            leading: const Icon(Icons.circle, color: Colors.blueAccent, size: 30),
             title:
                 const Text('Estado', style: TextStyle(fontWeight: FontWeight.bold)),
             subtitle: Text(persona.estado ? 'Activo' : 'Inactivo'),

@@ -17,10 +17,9 @@ class HomeScreen extends ConsumerWidget {
         child: Column(
           children: [
             const Spacer(flex: 2),
-            Image.network("https://i.postimg.cc/Qtxc8xgv/welcome-image.png"),
+            Image.network("https://mcmygbyijhazgjgfjpky.supabase.co/storage/v1/object/sign/app/home/introapp.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJhcHAvaG9tZS9pbnRyb2FwcC5wbmciLCJpYXQiOjE3MjgwNzc2OTksImV4cCI6MTc1OTYxMzY5OX0.nR8Tbe381u9-1pGKSODV1G7_XeY59SSQZwLVbjv-YTo&t=2024-10-04T21%3A34%3A59.980Z"),
             const Spacer(flex: 3),
-            Text(
-              "Welcome to our freedom \nmessaging app",
+            Text(welcome,
               textAlign: TextAlign.center,
               style: Theme.of(context)
                   .textTheme
@@ -29,7 +28,7 @@ class HomeScreen extends ConsumerWidget {
             ),
             const Spacer(),
             Text(
-              "Freedom talk any person of your \nmother language.",
+              "Toda tu información en un solo lugar",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Theme.of(context)

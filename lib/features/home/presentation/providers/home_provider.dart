@@ -3,5 +3,5 @@ part 'home_provider.g.dart';
 
 @Riverpod()
 String welcome(WelcomeRef ref) {
-  return 'Welcome to Termoterapias!';
+  return 'Welcome to App!';
 }
